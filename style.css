@@ -14,7 +14,7 @@ body {
 
 h2 {
   font-size: 3em;
-  color: #e94d58;
+  color: #333;
   margin: 15px 0;
   text-align: center;
 }
@@ -46,10 +46,52 @@ button {
 
 button:nth-child(1) {
   margin-left: -200px;
-  background: #e94d58;
+  background: #2bff00;
 }
 
 button:nth-child(2) {
   margin-right: -200px;
-  background: #e94d58;
+  background: #f30212;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .gif {
+    max-width: 200px;
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .no-button-boundary {
+    width: 90vw;
+    height: 40vh;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .gif {
+    max-width: 150px;
+  }
+
+  button {
+    width: 90px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .yes-btn {
+    margin-right: 0.5rem;
+  }
 }
